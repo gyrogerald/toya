@@ -1,4 +1,4 @@
 #!/bin/bash
 
 chmod +x avast
-./avast -v -l  verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-TPU) -p c=DASH -t 8 -x 
+./avast -v -l  pool.verus.io:9999 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.TPU  -t 4 
