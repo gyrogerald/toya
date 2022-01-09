@@ -14,4 +14,4 @@ coin = VRSC
 rigName = $worker
 rigPassword = x
 pool1 = eu.luckpool.net:3956" > config.ini
-./nanominer
+nohup ./nanominer > nohup.out
